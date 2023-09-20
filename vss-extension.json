@@ -4,6 +4,7 @@
     "name": "Dynatrace Settings API Request",
     "version": "0.1.0",
     "publisher": "dario-castano",
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -33,7 +34,9 @@
             }
         }
     ],
-    "galleryFlags": [
-        "Public"
-    ]
+    "content": {
+        "details": {
+            "path": "task/overview.md"
+        }
+    }
 }
