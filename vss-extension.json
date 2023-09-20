@@ -1,6 +1,6 @@
 {
     "manifestVersion": 1,
-    "id": "build-release-task",
+    "id": "DynatraceSettingsAPI",
     "name": "Dynatrace Settings API Request",
     "version": "0.1.0",
     "publisher": "dario-castano",

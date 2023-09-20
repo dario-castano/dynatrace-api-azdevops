@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "b1c0d1d5-30ad-477f-a491-7bcfc30bdd1d",
-    "name": "DynatraceApi",
+    "name": "DynatraceSettingsApi",
     "friendlyName": "Dynatrace Settings API Request",
     "description": "Send requests to the Dynatrace SaaS Settings API",
     "helpMarkDown": "Creates a new settings object or validates the provided settings object. Go to https://www.dynatrace.com/support/help/dynatrace-api/environment-api/settings/objects/post-object",
