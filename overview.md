@@ -1,0 +1,1 @@
+This extension will request the Dynatrace Settings API to set parameters.
