@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "b1c0d1d5-30ad-477f-a491-7bcfc30bdd1d",
     "name": "DynatraceApi",
-    "friendlyName": "Dynatrace SaaS API Request",
+    "friendlyName": "Dynatrace Settings API Request",
     "description": "Send requests to the Dynatrace SaaS API",
     "helpMarkDown": "",
     "category": "Utility",
@@ -15,12 +15,68 @@
     "instanceNameFormat": "Dynatrace API set parameter",
     "inputs": [
         {
-            "name": "samplestring",
+            "name": "environmentId",
             "type": "string",
-            "label": "Sample String",
+            "label": "Environment ID",
             "defaultValue": "",
             "required": true,
-            "helpMarkDown": "A sample string"
+            "helpMarkDown": "Your Dynatrace environment. https://{your-environment-id}.live.dynatrace.com"
+        },
+        {
+            "name": "externalId",
+            "type": "string",
+            "label": "External ID",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "External identifier for the object being created"
+        },
+        {
+            "name": "insertAfter",
+            "type": "string",
+            "label": "Insert after",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The position of the new object. The new object will be added after the specified one. \n If null, the new object will be placed in the last position. \n If set to empty string, the new object will be placed in the first position. \n Only applicable for objects based on schemas with ordered objects (schema's ordered parameter is set to true)."
+        },
+        {
+            "name": "objectId",
+            "type": "string",
+            "label": "Object ID",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The ID of the settings object that should be replaced. \n Only applicable if an external identifier is provided."
+        },
+        {
+            "name": "schemaId",
+            "type": "string",
+            "label": "Schema ID",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The schema on which the object is based."
+        },
+        {
+            "name": "schemaVersion",
+            "type": "string",
+            "label": "Schema version",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "The version of the schema on which the object is based."
+        },
+        {
+            "name": "scope",
+            "type": "string",
+            "label": "Scope",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The scope that the object targets. For more details, please see Dynatrace Documentation https://dt-url.net/ky03459."
+        },
+        {
+            "name": "value",
+            "type": "multiLine",
+            "label": "Value",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The value of the setting. \n It defines the actual values of settings' parameters. \n The actual content depends on the object's schema."
         }
     ],
     "execution": {

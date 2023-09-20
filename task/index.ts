@@ -1,4 +1,5 @@
 import tl = require('azure-pipelines-task-lib/task');
+import axios = require('axios');
 
 async function run() {
     try {
