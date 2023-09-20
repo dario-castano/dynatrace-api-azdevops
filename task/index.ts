@@ -1,5 +1,4 @@
 import tl = require('azure-pipelines-task-lib/task');
-import https = require('follow-redirects');
 
 async function run() {
     try {
