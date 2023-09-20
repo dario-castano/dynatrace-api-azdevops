@@ -3,8 +3,8 @@
     "id": "b1c0d1d5-30ad-477f-a491-7bcfc30bdd1d",
     "name": "DynatraceApi",
     "friendlyName": "Dynatrace Settings API Request",
-    "description": "Send requests to the Dynatrace SaaS API",
-    "helpMarkDown": "",
+    "description": "Send requests to the Dynatrace SaaS Settings API",
+    "helpMarkDown": "Creates a new settings object or validates the provided settings object. Go to https://www.dynatrace.com/support/help/dynatrace-api/environment-api/settings/objects/post-object",
     "category": "Utility",
     "author": "Hernan Dario Castano Rueda",
     "version": {
@@ -12,7 +12,7 @@
         "Minor": 1,
         "Patch": 0
     },
-    "instanceNameFormat": "Dynatrace API set parameter",
+    "instanceNameFormat": "Dynatrace Settings API - Post an object",
     "inputs": [
         {
             "name": "environmentId",
@@ -21,6 +21,14 @@
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "Your Dynatrace environment. https://{your-environment-id}.live.dynatrace.com"
+        },
+        {
+            "name": "apiToken",
+            "type": "string",
+            "label": "API Token",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Your Dynatrace API Token"
         },
         {
             "name": "externalId",
