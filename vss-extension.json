@@ -32,5 +32,8 @@
                 "name": "task"
             }
         }
+    ],
+    "galleryFlags": [
+        "Public"
     ]
 }
