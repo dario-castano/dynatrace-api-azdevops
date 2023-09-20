@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "DynatraceSettingsAPI",
     "name": "Dynatrace Settings API Request",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "dario-castano",
     "public": true,
     "targets": [
@@ -36,7 +36,7 @@
     ],
     "content": {
         "details": {
-            "path": "task/overview.md"
+            "path": "overview.md"
         }
     }
 }
