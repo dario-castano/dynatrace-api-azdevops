@@ -2,9 +2,9 @@
     "manifestVersion": 1,
     "id": "DynatraceSettingsAPI",
     "name": "Dynatrace Settings API Request",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "publisher": "dario-castano",
-    "public": true,
+    "public": false,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
